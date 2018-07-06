@@ -37,7 +37,11 @@ h2{
   color: #ff3300;
 }
 
+a{
+  text-decoration: none;
+}
+
 a:hover{
-  color: #e6b800;
+  color: #ff4d4d;
   text-decoration: none;
 }
