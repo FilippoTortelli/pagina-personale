@@ -1,38 +1,40 @@
+body{
+  background-color: rgb(26,26,26);
+  padding: 10px 60px 0px 60px;
+}
+
+ul{
+  padding-left: 15px;
+}
+
 p,ul,li,a,h2{
   font-family: 'Archivo',sans-serif;
-  color: White;
+  color: rgb(255,255,255);
 }
 
 h1,h2{
     font-family: 'Archivo Black', sans-serif;
-}
-
-body{
-  background-color: rgb(30, 30, 30);
-}
-
-div{
-  padding: 20px 0px 10px 0px;
+    color: White;
 }
 
 p{
   font-size: 1.1em;
-  padding: 0px 200px 0px 60px;
 }
 
 h1{
   font-size: 3em;
-  color: White;
+  border-bottom-color: White;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 h2{
   font-size: 2em;
-  color: #e6b800;
-  padding: 0px 200px 0px 60px;
+  color: #ff4d4d;
 }
 
 .sottotitolo{
-  color: #e6b800;
+  color: #ff3300;
 }
 
 a:hover{
