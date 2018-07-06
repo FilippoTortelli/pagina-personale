@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(26,26,26);
+  background-color: rgb(234,231,204);
   padding: 10px 60px 0px 60px;
 }
 
@@ -9,12 +9,12 @@ ul{
 
 p,ul,li,a,h2{
   font-family: 'Archivo',sans-serif;
-  color: rgb(255,255,255);
+  color: Black;
 }
 
 h1,h2{
     font-family: 'Archivo Black', sans-serif;
-    color: White;
+    color: Black;
 }
 
 p{
@@ -23,7 +23,7 @@ p{
 
 h1{
   font-size: 3em;
-  border-bottom-color: White;
+  border-bottom-color: Black;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
