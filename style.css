@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(234,231,204);
+  background-color: PAPAYAWHIP;
   padding: 10px 60px 0px 60px;
 }
 
@@ -33,7 +33,7 @@ h2{
   color: #ff4d4d;
 }
 
-.sottotitolo{
+a{
   color: #ff3300;
 }
 
@@ -42,6 +42,16 @@ a{
 }
 
 a:hover{
+  color: Black;
+  text-decoration: none;
+}
+
+.Menu a{
+  font-family: 'Archivo Black', sans-serif;
+  color: Black;
+}
+
+.Menu a:hover{
   color: #ff4d4d;
   text-decoration: none;
 }
