@@ -1,5 +1,5 @@
 body{
-    background-color: Papayawhip;
+    background-color: ;
     width: 100%;
     min-height: 100%;
     margin:0;
@@ -32,4 +32,19 @@ header{
     flex: 1;
     width: 100%;
     max-width: 685px;
+}
+
+#logo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+header a{
+  color: White;
+}
+
+header a:hover{
+  color: #ff4d4d;
+  text-decoration: none;
 }
