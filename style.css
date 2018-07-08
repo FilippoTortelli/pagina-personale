@@ -56,6 +56,13 @@ header a:hover{
   padding-top: 2%;
 }
 
+.testocentrato{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2%;
+}
+
 h1{
   font-family: 'Archivo Black',sans-serif;
   font-size: 1.6em;
@@ -93,13 +100,24 @@ p a:hover{
   margin-bottom: 4%;
 }
 
+.container-fluid{
+  overflow: hidden;
+}
 
-.container a{
+.container-fluid a{
   color: Black;
   text-decoration: none;
 }
 
-.container a:hover{
+.container-fluid a:hover{
   color: Black;
   text-decoration: none;
+}
+
+.imgworks{
+  width: 320px;
+  margin: 2% 0% 2% 0%;
+  border-style: solid;
+  border-color: Black;
+  border-width: 10px;
 }
