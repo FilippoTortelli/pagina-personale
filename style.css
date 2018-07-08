@@ -92,3 +92,14 @@ p a:hover{
   margin-top: 4%;
   margin-bottom: 4%;
 }
+
+
+.container a{
+  color: Black;
+  text-decoration: none;
+}
+
+.container a:hover{
+  color: Black;
+  text-decoration: none;
+}
