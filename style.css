@@ -1,57 +1,35 @@
 body{
-  background-color: PAPAYAWHIP;
-  padding: 10px 60px 0px 60px;
+    background-color: Papayawhip;
+    width: 100%;
+    min-height: 100%;
+    margin:0;
+    position: relative;
 }
 
-ul{
-  padding-left: 15px;
+*{
+    border:0px;
+    margin:0px;
+    padding:0px;
 }
 
-p,ul,li,a,h2{
-  font-family: 'Archivo',sans-serif;
-  color: Black;
+header{
+   text-align: left;
+   width: 100%;
+   background-color: Black;
+   height: auto;
+   font-family: 'Archivo Black', sans-serif;
+   text-align: center;
 }
 
-h1,h2{
-    font-family: 'Archivo Black', sans-serif;
-    color: Black;
-}
-
-p{
-  font-size: 1.1em;
-}
-
-h1{
-  font-size: 3em;
-  border-bottom-color: Black;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-}
-
-h2{
-  font-size: 2em;
-  color: #ff4d4d;
-}
-
-a{
-  color: #ff3300;
-}
-
-a{
-  text-decoration: none;
-}
-
-a:hover{
-  color: Black;
-  text-decoration: none;
-}
-
-.Menu a{
-  font-family: 'Archivo Black', sans-serif;
-  color: Black;
-}
-
-.Menu a:hover{
-  color: #ff4d4d;
-  text-decoration: none;
+#navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    margin:  auto;
+    padding: 10px;
+    flex: 1;
+    width: 100%;
+    max-width: 685px;
 }
