@@ -48,3 +48,47 @@ header a:hover{
   color: #ff4d4d;
   text-decoration: none;
 }
+
+.testopagina{
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2%;
+}
+
+h1{
+  font-family: 'Archivo Black',sans-serif;
+  font-size: 1.6em;
+  color: Black;
+  padding-bottom: 2%;
+}
+
+h2{
+  font-family: 'Archivo Black',sans-serif;
+  font-size: 1.2em;
+  color: Black;
+  padding: 0% 0% 0% 0%;
+}
+
+p{
+  font-family: 'Archivo',sans-serif;
+  font-weight: bold;
+}
+
+p a{
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
+p a:hover{
+  color: Black;
+  text-decoration: none;
+}
+
+.linea{
+  width: 24%;
+  height: 2px;
+  background-color: Black;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
