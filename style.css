@@ -19,6 +19,8 @@ header{
    height: auto;
    font-family: 'Archivo Black', sans-serif;
    text-align: center;
+   position: fixed;
+   z-index: 1;
 }
 
 #navbar{
@@ -100,24 +102,30 @@ p a:hover{
   margin-bottom: 4%;
 }
 
-.container-fluid{
-  overflow: hidden;
+.card{
+  border-color: White;
 }
 
-.container-fluid a{
-  color: Black;
-  text-decoration: none;
+.card-img{
+    border-radius: 0% 0% 0% 0%;
 }
 
-.container-fluid a:hover{
-  color: Black;
-  text-decoration: none;
+.card-img-overlay {
+    z-index: 0.5;
+    position: absolute;
+    color: Black;
+    height: 3em;
+    right: 40%;
+    background-color: White;
+    padding-left: 0px !important;
+    padding-top: 0px;
 }
 
-.imgworks{
-  width: 320px;
-  margin: 2% 0% 2% 0%;
-  border-style: solid;
-  border-color: Black;
-  border-width: 10px;
+.card-columns{
+  padding: 5% 15% 0% 15%;
+}
+
+.card p{
+  margin-top: -10px;
+  font-size: 0.8em;
 }
