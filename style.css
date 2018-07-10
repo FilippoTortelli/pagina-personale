@@ -60,9 +60,13 @@ header a:hover{
 
 .testocentrato{
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 30%;
+  padding-right: 30%;
   padding-top: 8%;
+}
+
+.imgprogetto{
+  width: 40vw;
 }
 
 h1{
