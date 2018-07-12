@@ -5,7 +5,7 @@
     <title>Filippo Tortelli - Work - Van Orton Style</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="jquery.min.js"></script>
   </head>
 
   <body>
@@ -23,16 +23,16 @@
     </header>
 
 <div class="testocentrato">
-  <h1>Love Calculator</h1>
-  <div class="form">
-    <label for="dog">His name: </label><input type="text" id="dog" class="dog">
-    <input type="text" id="dog2" class="dog2"><label for="dog2"> :Her name</label>
-  </div>
-<button>Click me</button>
-</div>
 
-<script>
-</script>
+    <h1>Love Calculator</h1>
+    <div class="form">
+      <input type="text" id="dog" class="dog">
+      <input type="text" id="dog2" class="dog2">
+    </div>
+  <button id="bottone">CALCOLA!</button>
+  <div id="risultato" class="risoff"><h2>50%</h2></div>
+
+</div>
 
 <style> input, button{
     overflow: visible;
@@ -44,7 +44,28 @@ button{
   padding-left: 0.2em;
   padding-right: 0.2em;
 }
+h2{
+  color: red;
+  margin-top: 5%;
+}
+ .risoff{
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+.rison{
+ height: 100%;
+ width: 100%;
+ overflow: hidden;
+}
 </style>
+
+<script>
+$("#bottone").on("click", function() {
+  $("#risultato").removeClass("risoff");
+  $("#risultato").addClass("rison");
+})
+</script>
 
   </body>
 </html>
