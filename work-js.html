@@ -8,6 +8,214 @@
     <script src="jquery.min.js"></script>
     <link rel="shortcut icon" href="img\logo.png">
     <link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Black" rel="stylesheet">
+    <style>
+    body{
+      background-color: Black;
+    }
+
+    .oggpagina{
+      padding: 10% 20% 20% 10%;
+      border-bottom: 2px solid White;
+    }
+
+    header{
+      border-bottom: 2px solid White;
+    }
+
+    #pupilla{
+      background-color: Black;
+      border-radius: 50%;
+      height: 8vh;
+      width: 8vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #occhiogrosso{
+      background-color: Black;
+      border: 2px solid White;
+      border-radius: 50%;
+      height: 32vh;
+      width: 32vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #occhio{
+      background-color: Black;
+      border: 2px solid White;
+      border-radius: 50%;
+      height: 30vh;
+      width: 30vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #cielo{
+      border-radius: 50%;
+      height: 30vh;
+      width: 30vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+
+    #cielosfera1{
+      border-radius: 50%;
+      height: 30vh;
+      width: 30vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #cielosfera2{
+      border-radius: 50%;
+      height: 20vh;
+      width: 20vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) rotate(120deg);
+    }
+
+    #cielosfera3{
+      border-radius: 50%;
+      height: 20vh;
+      width: 20vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) rotate(240deg);
+    }
+
+    #sfera1{
+      background-color: red;
+      border-radius: 50%;
+      height: 25vh;
+      width: 12vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #sfera2{
+      background-color: red;
+      border-radius: 50%;
+      height: 25vh;
+      width: 12vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #sfera3{
+      background-color: red;
+      border-radius: 50%;
+      height: 25vh;
+      width: 12vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #sfera4{
+      border: 2px solid Black;
+      border-radius: 50%;
+      height: 25vh;
+      width: 12vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #sfera5{
+      border: 2px solid Black;
+      border-radius: 50%;
+      height: 25vh;
+      width: 12vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    #sfera6{
+      border: 2px solid Black;
+      border-radius: 50%;
+      height: 25vh;
+      width: 12vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+
+    .rotate{
+      animation: rotation 1.5s forwards;
+    }
+
+    @keyframes rotation {
+      from{
+        transform: translate(-50%,-50%) rotate(0deg) scale(1);
+      }
+      50%{
+        transform: translate(-50%,-50%) rotate(720deg) scale(0.9);
+      }
+      to{
+        transform: translate(-50%,-50%) rotate(1440deg) scale(1);
+      }
+
+    }
+
+    .rotate2{
+      animation: rotation2 1.5s forwards;
+    }
+
+    @keyframes rotation2 {
+      from{
+        transform: translate(-50%,-50%) rotate(0deg) scale(1);
+      }
+      50%{
+        transform: translate(-50%,-50%) rotate(720deg) scale(0.9);
+      }
+      to{
+        transform: translate(-50%,-50%) rotate(1440deg) scale(1);
+      }
+
+    }
+
+    .scale{
+      animation: scalation 1.5s forwards;
+    }
+
+    @keyframes scalation {
+      from{
+        transform: translate(-50%,-50%) scale(1);
+      }
+      50%{
+        transform: translate(-50%,-50%) scale(1.05);
+      }
+      to{
+        transform: translate(-50%,-50%) scale(1);
+      }
+
+    }
+    </style>
   </head>
 
   <body>
@@ -24,50 +232,34 @@
       </div>
     </header>
 
-<div class="testocentrato">
-
-    <h1>Love Calculator</h1>
-    <div class="form">
-      <input type="text" id="dog" class="dog">
-      <input type="text" id="dog2" class="dog2">
+<div class="oggpagina">
+  <div id="occhiogrosso"></div>
+  <div id="occhio">
+    <div id="cielo">
+      <div id="cielosfera1"><div id="sfera1"></div></div>
+      <div id="cielosfera2" class="rotate120"><div id="sfera2"></div></div>
+      <div id="cielosfera3" class="rotate240"><div id="sfera3"></div></div>
+      <div id="cielosfera1"><div id="sfera4"></div></div>
+      <div id="cielosfera2" class="rotate120"><div id="sfera5"></div></div>
+      <div id="cielosfera3" class="rotate240"><div id="sfera6"></div></div>
     </div>
-  <button id="bottone">CALCOLA!</button>
-  <div id="risultato" class="risoff"><h2>50%</h2></div>
-
+  </div>
+  <div id="pupilla"></div>
 </div>
 
-<style> input, button{
-    overflow: visible;
-    border: 1px solid ;
-    margin: 0px 4px 0px 4px;
-}
-button{
-  margin-top: 5%;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-h2{
-  color: red;
-  margin-top: 5%;
-}
- .risoff{
-  height: 0%;
-  width: 0%;
-  overflow: hidden;
-}
-.rison{
- height: 100%;
- width: 100%;
- overflow: hidden;
-}
-</style>
-
 <script>
-$("#bottone").on("click", function() {
-  $("#risultato").removeClass("risoff");
-  $("#risultato").addClass("rison");
+$("#pupilla").on("click", function() {
+  if($("#cielo").hasClass("rotate")){
+    $("#cielo").removeClass("rotate");
+    $("#cielo").addClass("rotate2");
+    $("#pupilla").removeClass("scale");
+  }
+  else {
+    $("#cielo").removeClass("rotate2");
+    $("#cielo").addClass("rotate");
+    $("#pupilla").addClass("scale");
+  }
 })
 </script>
-
   </body>
 </html>
