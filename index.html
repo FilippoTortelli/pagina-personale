@@ -7,10 +7,47 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img\logo.png">
     <link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Black" rel="stylesheet">
+    <script src="jquery.min.js"></script>
     <style>
       a h2:hover{
         color: #ff4d4d;
         text-decoration: none;
+        animation: scale 0.2s forwards;
+      }
+
+      @keyframes scale {
+        from{ transform: scale(1);}
+        to{ transform: scale(1.05);}
+      }
+
+      .fila{
+        background-color: White;
+      }
+
+      .updown{
+        animation: updowner 0.5s forwards;
+      }
+
+      @keyframes updowner {
+        from{
+          transform: translate(0%,-40%);
+        }
+        to{
+          transform: translate(0%, 0%);
+        }
+      }
+
+      .downup{
+        animation: downuper 0.5s forwards;
+      }
+
+      @keyframes downuper {
+        from{
+          transform: translate(0%,40%);
+        }
+        to{
+          transform: translate(0%, 0%);
+        }
       }
     </style>
   </head>
@@ -31,7 +68,7 @@
 
 <div class="testopagina" id="primapagina">
 
-      <h2>Filippo Tortelli<br>website</h2>
+      <h2><div id="fila1" class="fila updown">Filippo Tortelli</div><div id="fila2" class="fila downup">website</div></h2>
 
   <div class="spaziovuoto"></div>
 
@@ -58,16 +95,14 @@
   </div>
 
 <div class="spaziovuoto"></div>
-<a href="work.html"><h2>work</h2></a>
+<a href="work.html"><h2 id="worka">work</h2></a>
 <div class="spaziovuoto"></div>
-<div class="lineagrande" align="center"></div>
+<div id="lineagrandework" class="lineagrande" align="center"></div>
 <a href="about.html"><h2>about</h2></a>
 <div class="spaziovuoto"></div>
 <div class="lineagrande" align="center"></div>
 <a href="contact.html"><h2>contact</h2></a>
 <div class="spaziovuoto"></div>
-
-</div>
 
   </body>
 </html>
